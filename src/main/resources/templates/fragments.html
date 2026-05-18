@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<body>
+<nav class="navbar" th:fragment="navbar">
+    <a th:href="@{/}" class="brand">CS50 Guide BR</a>
+    <div class="menu">
+        <a th:href="@{/modules}">Módulos</a>
+        <a th:href="@{/progress}">Progresso</a>
+        <a th:href="@{/study-plan}">Plano de estudos</a>
+        <a th:href="@{/exercises}">Exercícios</a>
+        <a th:href="@{/about}">Sobre</a>
+    </div>
+    <button id="themeToggle" class="theme-btn">🌙</button>
+</nav>
+</body>
+</html>
