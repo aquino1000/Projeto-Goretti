@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shorts Cutter AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero card">
+      <h1>Shorts Cutter AI</h1>
+      <p>Cole seu vídeo, a IA encontra os melhores momentos e gera Shorts com legenda, hashtags e qualidade 1080p.</p>
+      <form id="process-form">
+        <input id="youtube-url" type="url" placeholder="Cole o link do YouTube" required />
+        <select id="subtitle-style">
+          <option value="white">Branco com borda preta</option>
+          <option value="yellow">Amarelo com borda preta</option>
+          <option value="tiktok">Estilo TikTok/Reels</option>
+        </select>
+        <label class="auth"><input type="checkbox" id="authorized" required /> Confirmo que o vídeo é meu ou autorizado.</label>
+        <button type="submit">Gerar cortes</button>
+      </form>
+      <small>Uso responsável: não utilize conteúdo sem autorização do proprietário.</small>
+    </section>
+
+    <section id="panel" class="card hidden">
+      <h2>Painel de Processamento</h2>
+      <div id="video-info"></div>
+      <p><strong>Status:</strong> <span id="status">Aguardando</span></p>
+      <p><strong>Quantidade de cortes:</strong> <span id="count">0</span></p>
+    </section>
+
+    <section id="results" class="hidden">
+      <div class="results-header">
+        <h2>Cortes Gerados</h2>
+        <a id="download-zip" class="btn" href="#">Baixar todos em ZIP</a>
+      </div>
+      <div id="clips-grid" class="grid"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
