@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS50 Guide BR</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments :: navbar}"></div>
+<header class="hero">
+    <h1>Aprenda Programação do Zero com Harvard</h1>
+    <p>Guia em português inspirado no CS50 para iniciantes absolutos no mundo da programação.</p>
+    <div class="hero-actions">
+        <a class="btn" th:href="@{/chapter/1}">Começar o eBook</a>
+        <a class="btn btn-outline" th:href="@{/modules}">Ver módulos</a>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>O que é o CS50?</h2>
+        <p>O CS50: Introduction to Computer Science é um curso introdutório de ciência da computação da Harvard University, reconhecido mundialmente por sua didática prática e exigente.</p>
+    </section>
+    <section class="card">
+        <h2>Por que é bom para iniciantes?</h2>
+        <p>Mesmo começando do zero, você aprende lógica, algoritmos, linguagens importantes e como construir projetos reais. O curso pode ser feito gratuitamente na modalidade audit/free.</p>
+    </section>
+</main>
+<script th:src="@{/js/app.js}"></script>
+</body>
+</html>
